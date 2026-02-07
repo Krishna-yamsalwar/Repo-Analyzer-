@@ -1,0 +1,17 @@
+{
+    "name": "repopilot-ai",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "turbo dev",
+        "build": "turbo build",
+        "lint": "turbo lint",
+        "type-check": "turbo type-check",
+        "dev:web": "pnpm --filter @repopilot/web dev",
+        "dev:api": "cd apps/api && python -m uvicorn app.main:app --reload --port 8000"
+    },
+    "devDependencies": {
+        "turbo": "^2.0.0"
+    },
+    "packageManager": "pnpm@8.15.0"
+}
